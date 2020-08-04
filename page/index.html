@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>tryout.js</title>
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mntn-dev/t.js/t.min.js"></script>
+    <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+    <script type="text/javascript"></script>
+</head>
+
+<body>
+    <pre id="main">
+            Hello Deckard!<ins><span id = "helpText">---[WELCOME TO LOS ANGELES POLICE DEPARTMENT SYSTEM]</span></ins>
+            <span id = "tagline"> Please wait until the system loads all data <ins>Thank you, Blade Runner</ins></span>
+        </pre>
+
+    <script>
+        $('body').terminal({
+            hello: function(what) {
+                this.echo('Hello, ' + what +
+                    '. Wellcome to this terminal.');
+            },
+            cat: function() {
+                this.echo($('<img src="https://placekitten.com/408/287">'));
+            }
+        }, {
+            greetings: 'My First Terminal'
+        });
+    </script>
+
+    <script>
+        $('#main').t({
+            beep: true,
+            blink: false,
+            pause_on_click: true,
+            speed: 0.01,
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+body {
+    padding: 0%;
+    background: black;
+}
+
+pre {
+    color: greenyellow;
+    font-size: 10px;
+    font-family: monospace;
+    font-weight: bolder;
+}
+
+#tagline {
+    color: grey;
+    font-weight: 100;
+}
+
+#pow-txt {
+    display: inline-block;
+    font-weight: 100;
+    color: green;
+}
